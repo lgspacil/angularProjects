@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { HttpService } from './http.service';
+//Here you must add this above from a local file ./http.service
 
 @Component({
   selector: 'app-root',
@@ -7,12 +8,7 @@ import { HttpService } from './http.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  constructor(private _httpService: HttpService){}
 
-  showThis(){
-    
-    console.log(this._httpService.retrieveTasks());
-  }
 
   title = 'Practice - app';
 
